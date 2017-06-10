@@ -86,8 +86,8 @@ public class Klout {
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public UserId getUserId(UserId id, Network network) throws IOException {
-		return new UserId(KloutRequests.sendRequest(String.format(
-				KloutRequests.ID_FROM_KLOUT_TO_NETWORK, id.getNetwork(), id.getId(), network.network(), apiKey)));
+		return new UserId(new JSONObject(KloutRequests.sendRequest(String.format(
+				KloutRequests.ID_FROM_KLOUT_TO_NETWORK, id.getNetwork(), id.getId(), network.network(), apiKey))));
 	}
 	
 	/**
@@ -101,8 +101,8 @@ public class Klout {
 		if (id.isKloutId()) {
 			return id;
 		}
-		return new UserId(KloutRequests.sendRequest(String.format(
-				KloutRequests.ID_FROM_NETWORK_TO_KLOUT, id.getNetwork(), id.getId(), apiKey)));
+		return new UserId(new JSONObject(KloutRequests.sendRequest(String.format(
+				KloutRequests.ID_FROM_NETWORK_TO_KLOUT, id.getNetwork(), id.getId(), apiKey))));
 	}
 	
 	/**
@@ -113,8 +113,8 @@ public class Klout {
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public UserId getUserIdFromTwitterScreenName(String screenName) throws IOException {
-		return new UserId(KloutRequests.sendRequest(String.format(
-				KloutRequests.ID_FROM_TWITTER_SCREENNAME, screenName, apiKey)));
+		return new UserId(new JSONObject(KloutRequests.sendRequest(String.format(
+				KloutRequests.ID_FROM_TWITTER_SCREENNAME, screenName, apiKey))));
 	}
 
 }

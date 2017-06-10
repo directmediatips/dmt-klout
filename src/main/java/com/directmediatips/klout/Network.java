@@ -29,7 +29,7 @@ public enum Network {
 	private String network;
 	
 	/**
-	 * Creates a new <code>Network</code> instance.
+	 * Creates a new {@link Network} instance.
 	 *
 	 * @param network the network
 	 */
@@ -38,7 +38,7 @@ public enum Network {
 	}
 	
 	/**
-	 * Returns the Network value.
+	 * Returns the network value.
 	 *
 	 * @return the network value
 	 */
