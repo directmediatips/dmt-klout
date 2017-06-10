@@ -4,7 +4,7 @@
 
   <groupId>com.directmediatips</groupId>
   <artifactId>dmt-klout</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <packaging>jar</packaging>
 
   <name>DirectMediaTips: Klout</name>
