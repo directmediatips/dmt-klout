@@ -30,7 +30,7 @@ public class Klout {
 	private String apiKey;
 	
 	/**
-	 * Creates a new <{@link Klout} instance.
+	 * Creates a new {@link Klout} instance.
 	 *
 	 * @param apiKey an api key registered with Klout
 	 */
@@ -40,9 +40,10 @@ public class Klout {
 	
 	/**
 	 * Gets a {@link User} object based on a {@link UserId}.
-	 * @param the {@link UserId}
-	 * @return	a {@link User} object
-	 * @throws IOException
+	 *
+	 * @param id the {@link UserId}
+	 * @return a {@link User} object
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public User getUser(UserId id) throws IOException {
 		return new User(new JSONObject(KloutRequests.sendRequest(String.format(
@@ -51,9 +52,10 @@ public class Klout {
 	
 	/**
 	 * Gets an {@link Influence} object based on a {@link UserId}.
-	 * @param the {@link UserId}
-	 * @return	an {@link Influence} object
-	 * @throws IOException
+	 *
+	 * @param id the id
+	 * @return an {@link Influence} object
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public Influence getInfluence(UserId id) throws IOException {
 		return new Influence(new JSONObject(KloutRequests.sendRequest(String.format(
@@ -62,9 +64,10 @@ public class Klout {
 	
 	/**
 	 * Gets a list of {@link Topic} objects based on a {@link UserId}.
-	 * @param the {@link UserId}
-	 * @return	a list of {@link Topic} objects
-	 * @throws IOException
+	 *
+	 * @param id the id
+	 * @return a list of {@link Topic} objects
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public List<Topic> getTopics(UserId id) throws IOException {
 		List<Topic> topics = new ArrayList<Topic>();
