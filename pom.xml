@@ -4,12 +4,23 @@
 
   <groupId>com.directmediatips</groupId>
   <artifactId>dmt-klout</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <packaging>jar</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>Simple classes to use the Klout API.</description>
   <url>http://directmediatips.com</url>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 
   <licenses>
     <license>
