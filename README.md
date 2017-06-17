@@ -30,3 +30,5 @@ The following lines show how to write this information to the `System.out`:
     System.out.println(klout.getUser(id));
     System.out.println(klout.getInfluence(id));
     System.out.println(klout.getTopics(id));
+
+See also [KloutConnect.java](https://github.com/directmediatips/dmt-book/blob/master/src/main/java/com/directmediatips/book/chapter01/KloutConnect.java) for a simple standalone example.
