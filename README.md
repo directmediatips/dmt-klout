@@ -1,6 +1,14 @@
 # dmt-klout
 
-Code to connect to the Klout API
+Simple library to connect to the Klout API as explained in the [Setting up a Klout application](https://wil-low.com/directmediatips/chapter01/setupklout) section of the [Direct Media Tips and Tricks](https://wil-low.com/directmediatips) book.
+
+This library is also available on the Maven Central Repository:
+
+    <dependency>
+      <groupId>com.directmediatips</groupId>
+      <artifactId>dmt-klout</artifactId>
+      <version>0.1.1</version>
+    </dependency>
 
 To use this library, create a `Klout` object with an API key that gives you access to the Klout API.
 
